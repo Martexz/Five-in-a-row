@@ -8,7 +8,46 @@ class seat // 存储位置
 public:
 	int i, j, num;
 	seat() : i(0), j(0), num(0) {}
-};
+}; int length[4] = { 0,0,0,0 };    // 四个方向的长度
+for (int k = 0; k < 4; k++)
+{
+	// 原理同寻找最佳位置
+	int nowi = i;
+	int nowj = j;
+	while (nowi <= 18 && nowj <= 18 && nowi >= 0 && nowj >= 0 && BOX[nowi][nowj].value == nowcolor)
+	{
+		length[k]++;
+		nowj += dx[k];
+		nowi += dy[k];
+	}
+	nowi = i;
+	nowj = j;
+	while (nowi <= 18 && nowj <= 18 && nowi >= 0 && nowj >= 0 && BOX[nowi][nowj].value == 1 - nowcolor)
+	{
+		length[k]++;
+		nowj -= dx[k];
+		nowi -= dy[k];
+	}
+}
+for (int k = 0; k < 4; k++)
+{
+	if (length[k] >= 5) {
+		// 如果满五子
+		if (nowcolor == playercolor)
+		{
+			win = playercolor; // 玩家胜
+		}
+		if (nowcolor == 1 - playercolor)
+		{
+			win = 1 - playercolor; // 电脑胜
+		}
+	}
+}
+if ((!isinit) && findbestseat(playercolor).number == 0 && findbestseat(1 - playercolor).number == 0)
+{
+	// 如果不是开局且双方无最佳位置
+	win = 2; // 平局
+}
 
 class board
 {
