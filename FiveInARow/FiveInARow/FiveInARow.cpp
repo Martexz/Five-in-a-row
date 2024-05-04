@@ -8,6 +8,10 @@ int main()
 	setbkcolor(WHITE);
 	cleardevice();
 	setbkmode(TRANSPARENT);
+	HWND head = GetHWnd();
+	SetWindowText(head, "五子棋");
+	
+
 	while (true)
 	{
 		init();

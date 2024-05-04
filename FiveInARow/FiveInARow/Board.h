@@ -24,3 +24,4 @@ public:
 board box[19][19];
 
 void draw();
+void drawimg(IMAGE* picture, int picture_x, int picture_y);

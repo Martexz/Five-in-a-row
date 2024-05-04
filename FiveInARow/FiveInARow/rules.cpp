@@ -56,6 +56,13 @@ void iswin()
 
 void init()
 {
+	IMAGE bk;
+	loadimage(&bk, "./resources/bk.png");
+	putimage(0, 0, &bk);
+	IMAGE tbox;
+	loadimage(&tbox, "./resources/textbox.png");
+	drawimg(&tbox, 250, 630);
+
 	win = -1;
 	for (int i = 0; i < 19; i++)
 		for (int j = 0; j < 19; j++)
@@ -73,17 +80,17 @@ void MainGame()
 
 	setfillcolor(RGB(255, 205, 150));
 	solidrectangle(40, 25, 645, 630);
-	settextstyle(0, 0, _T("ººÒÇÎÄºÚ-65W"));
-	settextcolor(BLACK);
+	settextstyle(50, 40, _T("ººÒÇÎÄºÚ-65W"));
+	settextcolor(0);
 
 	if (PlayerColor == 0)
 	{
-		outtextxy(150, 650, _T("Íæ¼Ò°×Æå"));
+		outtextxy(276, 638, _T("Íæ¼Ò°×Æå"));
 		NextPlayer = 1;
 	}
 	else
 	{
-		outtextxy(150, 650, _T("Íæ¼ÒºÚÆå"));
+		outtextxy(276, 638, _T("Íæ¼ÒºÚÆå"));
 		NextPlayer = 0;
 	}
 	draw();
@@ -152,13 +159,16 @@ DRAW:
 	settextcolor(RGB(0, 255, 0));
 	settextstyle(30, 15, _T("»ªÎÄÖÐËÎ"));
 	Sleep(1000);
+	IMAGE flag;
 	switch (win)
 	{
 	case 0:
-		outtextxy(320, 320, _T("°×Ê¤£¡"));
+		loadimage(&flag, "./resources/white_win.png");
+		drawimg(&flag, 300, 300);
 		break;
 	case 1:
-		outtextxy(320, 320, _T("ºÚÊ¤£¡"));
+		loadimage(&flag, "./resources/black_win.png");
+		drawimg(&flag, 300, 300);
 		break;
 	case 2:
 		outtextxy(320, 320, _T("Æ½¾Ö£¡"));
