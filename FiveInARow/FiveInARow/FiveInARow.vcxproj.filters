@@ -18,9 +18,18 @@
     <ClCompile Include="FiveInARow.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="board.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rules.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.h">
+    <ClInclude Include="board.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="enemy.h">

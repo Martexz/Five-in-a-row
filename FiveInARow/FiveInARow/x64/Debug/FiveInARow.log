@@ -1,0 +1,18 @@
+﻿  board.cpp
+  enemy.cpp
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\enemy.cpp(116,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  FiveInARow.cpp
+  rules.cpp
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\rules.cpp(71,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+enemy.obj : error LNK2005: "class board (* box)[19]" (?box@@3PAY0BD@Vboard@@A) 已经在 board.obj 中定义
+FiveInARow.obj : error LNK2005: "int * dx" (?dx@@3PAHA) 已经在 enemy.obj 中定义
+FiveInARow.obj : error LNK2005: "int * dy" (?dy@@3PAHA) 已经在 enemy.obj 中定义
+FiveInARow.obj : error LNK2005: "class board (* box)[19]" (?box@@3PAY0BD@Vboard@@A) 已经在 board.obj 中定义
+rules.obj : error LNK2005: "int * dx" (?dx@@3PAHA) 已经在 enemy.obj 中定义
+rules.obj : error LNK2005: "int * dy" (?dy@@3PAHA) 已经在 enemy.obj 中定义
+rules.obj : error LNK2005: "int win" (?win@@3HA) 已经在 FiveInARow.obj 中定义
+rules.obj : error LNK2005: "int NextPlayer" (?NextPlayer@@3HA) 已经在 FiveInARow.obj 中定义
+rules.obj : error LNK2005: "int PlayerColor" (?PlayerColor@@3HA) 已经在 FiveInARow.obj 中定义
+rules.obj : error LNK2005: "class board (* box)[19]" (?box@@3PAY0BD@Vboard@@A) 已经在 board.obj 中定义
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\x64\Debug\FiveInARow.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
