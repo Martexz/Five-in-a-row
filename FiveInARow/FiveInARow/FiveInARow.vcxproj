@@ -144,12 +144,18 @@
   <ItemGroup>
     <ClInclude Include="board.h" />
     <ClInclude Include="enemy.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="rules.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\..\Desktop\bk.png" />
     <Image Include="..\..\..\..\..\..\Desktop\black_win.png" />
     <Image Include="..\..\..\..\..\..\Desktop\white_win.png" />
+    <Image Include="D:\Tools\icon\wzq_00001.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FiveInARow.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

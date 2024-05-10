@@ -38,6 +38,12 @@
     <ClInclude Include="rules.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\..\Desktop\bk.png">
@@ -49,5 +55,13 @@
     <Image Include="..\..\..\..\..\..\Desktop\white_win.png">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="D:\Tools\icon\wzq_00001.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FiveInARow.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

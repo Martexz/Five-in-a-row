@@ -9,8 +9,7 @@ int main()
 	cleardevice();
 	setbkmode(TRANSPARENT);
 	HWND head = GetHWnd();
-	SetWindowText(head, "五子棋");
-	
+	SetWindowText(head, "五子棋人机对战");
 
 	while (true)
 	{
