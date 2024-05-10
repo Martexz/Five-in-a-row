@@ -5,8 +5,8 @@ C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\enemy.cp
 C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\rules.cpp(78,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
   (编译源文件“FiveInARow.cpp”)
   
-  正在生成代码
-  Previous IPDB not found, fall back to full compilation.
-  All 14 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  已完成代码的生成
-  FiveInARow.vcxproj -> C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\x64\Release\FiveInARow.exe
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\board.h(22): warning C26495: 未初始化变量 board::mode。始终初始化成员变量(type.6)。
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\board.cpp(146): warning C6282: 运算符不正确。
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\enemy.cpp(39): warning C6385: 正在从 "box" 读取无效数据。
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\enemy.cpp(90): warning C6385: 正在从 "box[nowi]" 读取无效数据。
+C:\Users\minec\source\repos\Martexz\Five-in-a-row\FiveInARow\FiveInARow\enemy.cpp(99): warning C6385: 正在从 "Score[enemy[k]]" 读取无效数据。
